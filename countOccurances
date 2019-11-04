@@ -1,0 +1,17 @@
+public class Main
+{
+    static int countOccurances(int[] arr, int n, int x)
+    {
+        int count = 0;
+        for(int i =0; i<n; i++)
+            if(x == arr[i])
+            count++;
+        return count;
+    }
+	public static void main(String[] args) {
+	    int[] arr = {1,1,2,2,2,2,3,3};
+	    int n = arr.length;
+	    int x = 2;
+		System.out.println(countOccurances(arr,n,x));
+	}
+}
